@@ -1,0 +1,255 @@
+.App {
+  margin: 40px auto;
+  width: 60%;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input, textarea {
+  padding: 12px 15px;
+  margin-top: 5px;
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fff;
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #4CAF50;
+  outline: none;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.1);
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1976D2;
+}
+
+.post-type {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.post-type input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #4CAF50;
+  cursor: pointer;
+}
+
+.post-type input[type="radio"] {
+  appearance: none;
+  border: 2px solid #4CAF50;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+}
+
+.post-type input[type="radio"]:checked::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.post-type label {
+  margin-left: 8px;
+  font-weight: normal;
+  color: #555;
+}
+
+/* Add this to your App.css */
+.image-upload-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.image-upload-section label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: #999;
+  color: white;
+  border-radius: 4px;
+}
+
+.custom-file-upload:hover {
+  background-color: #666;
+}
+
+.upload-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.upload-button {
+  background-color: #999;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.upload-button:hover {
+  background-color: #666;
+}
+
+/* App.css */
+.main-nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.main-nav ul li {
+  display: inline;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: #2196F3;
+  font-size: 18px;
+}
+
+.main-nav ul li a:hover {
+  color: #1976D2;
+}
+
+
+.pricing-plans {
+  text-align: center;
+  margin: 20px;
+}
+
+.plan-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.plan {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 300px;
+}
+
+.basic-plan {
+  background-color: #e0f7fa;
+}
+
+.premium-plan {
+  background-color: #ffe0b2;
+}
+
+
+.payment-container {
+  text-align: center;
+  margin: 40px;
+}
+
+.pay-now-button {
+  background-color: #6772e5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pay-now-button:hover {
+  background-color: #5469d4;
+  transform: scale(1.05);
+}
+
+.pay-now-button:focus {
+  outline: none;
+}
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+}
+
+input, textarea {
+  margin: 10px 0;
+  padding: 8px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.code-editor {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.markdown-preview {
+  background: #f8f8f8;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
