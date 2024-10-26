@@ -11,7 +11,7 @@ function NewPost() {
   const [postType, setPostType] = useState('question');
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  const [code, setCode] = useState(''); // Code state for CodeMirror
+  const [code, setCode] = useState(''); 
   const [tags, setTags] = useState('');
   const [abstract, setAbstract] = useState('');
   const [image, setImage] = useState(null);
@@ -52,7 +52,7 @@ function NewPost() {
           }
         );
       } else {
-        resolve(""); // No image uploaded
+        resolve(""); 
       }
     });
   };
@@ -61,7 +61,7 @@ function NewPost() {
     event.preventDefault();
 
     try {
-      const uploadedImageUrl = await handleImageUpload(); // Upload image first
+      const uploadedImageUrl = await handleImageUpload(); 
 
       const post = {
         title,
