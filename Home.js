@@ -1,4 +1,4 @@
-// Home.js
+
 import React, { useState, useEffect } from 'react';
 import { db } from './utils/Firebase';
 import { collection, getDocs, deleteDoc, doc } from 'firebase/firestore';
@@ -59,7 +59,6 @@ function Home() {
     setFilteredPosts(filteredPosts.filter((post) => post.id !== id));
   };
 
-  // Handle expand post card
   const handleExpand = (id) => {
     setExpandedPostId(expandedPostId === id ? null : id);
   };
